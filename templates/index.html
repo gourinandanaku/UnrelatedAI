@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10171f">
+    <title>Unrelated AI | You ask. It wanders.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">🤪</div>
+                <div class="brand-text">
+                    <h1>Unrelated AI</h1>
+                    <p class="tagline">You ask. It wanders.</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <button class="icon-btn active" id="voiceToggleBtn" type="button" aria-label="Toggle AI voice"><span id="voiceIcon" aria-hidden="true">🔊</span><span>Voice</span></button>
+                <button class="icon-btn hidden" id="stopVoiceBtn" type="button" aria-label="Stop AI voice">⏹️</button>
+            </div>
+        </header>
+
+        <section class="controls-section" aria-label="Chaos controls">
+            <div class="mode-selector" role="group" aria-label="Response mode">
+                <button class="mode-pill active" type="button" data-mode="normal">🟢 Normal chaos</button>
+                <button class="mode-pill" type="button" data-mode="maximum">💥 Maximum chaos</button>
+                <button class="mode-pill" type="button" data-mode="malayalam">🌴 Malayalam chaos</button>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-card"><div class="stat-header"><span class="stat-title">Unrelatedness</span><span class="stat-tag">just for fun</span></div><strong class="stat-value" id="unrelatednessValue">94%</strong></div>
+                <div class="stat-card"><div class="stat-header"><span class="stat-title">Chaos meter</span><strong class="stat-value-sm" id="chaosPercentage">85%</strong></div><div class="meter-track" aria-label="Chaos level"><div class="meter-fill" id="chaosMeterFill" style="width: 85%"></div></div></div>
+            </div>
+        </section>
+
+        <section class="chat-container" id="chatContainer" aria-live="polite">
+            <div class="landing-state" id="landingState">
+                <div class="hero-emoji" aria-hidden="true">🌀</div>
+                <h2>Ask anything. Get something else.</h2>
+                <p class="hero-subtitle">A tiny AI with a very serious commitment to being off-topic.</p>
+                <div class="suggestions-container">
+                    <p class="suggestions-label">Start with a beautifully irrelevant thought</p>
+                    <div class="suggestion-chips">
+                        <button class="chip" type="button" data-text="Entha kazhiche?">Entha kazhiche?</button>
+                        <button class="chip" type="button" data-text="How is your day going?">How is your day going?</button>
+                        <button class="chip" type="button" data-text="Explain quantum physics">Explain quantum physics</button>
+                        <button class="chip" type="button" data-text="Tell me a secret">Tell me a secret</button>
+                    </div>
+                </div>
+            </div>
+            <div class="messages-list" id="messagesList"></div>
+            <div class="typing-indicator hidden" id="typingIndicator"><div class="avatar" aria-hidden="true">🤖</div><div class="typing-bubble"><span>Thinking sideways</span><span class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></span></div></div>
+        </section>
+
+        <div class="speech-status hidden" id="speechStatus"><span class="pulse-dot" aria-hidden="true"></span><span id="speechStatusText">Listening to your voice...</span></div>
+        <footer class="input-footer"><form class="input-form" id="chatForm"><button class="mic-btn" id="micBtn" type="button" aria-label="Use voice input">🎙️</button><div class="input-wrapper"><input id="userInput" type="text" autocomplete="off" placeholder="Say something. Anything. Really." aria-label="Your message"></div><button class="send-btn" id="sendBtn" type="submit"><span>Send</span><span class="send-icon" aria-hidden="true">↗</span></button></form></footer>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
