@@ -254,8 +254,8 @@ https://github.com/gourinandanaku/UnrelatedAI/blob/main/Screen%20Recording%20202
 Demo video demonstrating the main features of URAI including text input, voice input, unrelated responses, chaos modes, Unrelatedness Score, Chaos Meter, and voice output.
 
 Additional Demos
-🌐 Live Demo: [YOUR-RENDER-LINK]
-💻 GitHub Repository: [YOUR-GITHUB-REPOSITORY-LINK]
+🌐 Live Demo: https://unrelatedai.onrender.com/
+💻 GitHub Repository: https://github.com/gourinandanaku/UnrelatedAI
 Team Contributions
 Gouri Nandana K.U: Flask backend development, API implementation, random response system, application integration, testing, and deployment.
 Deril K Shaju: Frontend development, UI design, JavaScript functionality, voice interaction, text-to-speech integration, and project documentation.
