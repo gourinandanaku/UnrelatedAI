@@ -195,6 +195,9 @@ The interface provides suggested prompts to help users start a conversation with
 
 Screenshots (Add at least 3)
 
+https://github.com/gourinandanaku/UnrelatedAI/blob/main/Screenshot%202026-09-12%20055619.png
+https://github.com/gourinandanaku/UnrelatedAI/blob/main/Screenshot%202026-09-12%20064542.png
+https://github.com/gourinandanaku/UnrelatedAI/blob/main/Screenshot%202026-09-12%20064549.png
 
 
 
@@ -247,7 +250,7 @@ System Architecture
                         🤖 URAI
 Project Demo
 Video
-
+https://github.com/gourinandanaku/UnrelatedAI/blob/main/Screen%20Recording%202026-09-12%20055548.mp4
 Demo video demonstrating the main features of URAI including text input, voice input, unrelated responses, chaos modes, Unrelatedness Score, Chaos Meter, and voice output.
 
 Additional Demos
